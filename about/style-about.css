@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET
+
+font-family: 'Assistant', sans-serif;
+font-family: 'Abril Fatface', cursive;
+
+*/
+
+/**********************
+BORDER BOX
+***********************/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	font-size: 16px;
+}
+
+
+
+/****************
+Emoji Drop
+*****************/
+@-webkit-keyframes falling-emoji{
+   /*What style will make the emoji start at the top of the game container?*/
+   0% {
+     margin-top:0;
+    }
+    100% {
+      margin-top:96vh;
+    }
+}
+@keyframes falling-emoji{
+  0% {
+    margin-top:0;
+   }
+   100% {
+     margin-top:96vh;
+   }
+}
+
+.emoji{
+		 width: auto;
+     height:30px;
+     position: absolute;
+}
+.slow-falling-emoji,.medium-falling-emoji,.fast-falling-emoji{
+     -webkit-animation-name: falling-emoji /*What is the name of our animation?*/;
+     -webkit-animation-iteration-count: 1/*How many times do we want the animation to happen per emoji?*/;
+     -webkit-animation-duration: 2s/*How long should the slow falling emoji take to reach the bottom?*/;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+}
+.medium-falling-emoji{
+     -webkit-animation-duration: 2s/*How long should the medium speed emoji take to reach the bottom?*/;
+}
+.fast-falling-emoji{
+     -webkit-animation-duration: 1s/*How long should the fast falling emoji take to reach the bottom?*/;
+}
