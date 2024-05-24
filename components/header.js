@@ -163,7 +163,7 @@ class Header extends HTMLElement {
   			<nav class='hamburgernav'>
   				<ul>
   					<li> <a href="index.html">Research</a> </li>
-            <li> <a href="otherwork.html">Other Work</a> </li>
+            <!-- <li> <a href="otherwork.html">Other Work</a> </li> -->
             <li> <a href="about.html">About Me</a> </li>
             <li> <a href="images/resume/Alyson-Bortone_UXR_Resume.pdf" target="_blank">Resume</a></li>
   				</ul>

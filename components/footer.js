@@ -83,7 +83,7 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center mb-3"> &copy; 2023 Copyright: Website designed and developed by Julia Paranay</div>
+        <div class="footer-copyright text-center mt-5 mb-5"> &copy; 2024 Copyright: Website designed and developed by <a href="https://www.juliaparanay.com/index.html" target="_blank">Julia Paranay</a></div>
       </footer>
       <!-- Footer -->
     `;
@@ -91,3 +91,5 @@ class Footer extends HTMLElement {
 }
 
 customElements.define('footer-component', Footer);
+
+
